@@ -1,0 +1,12 @@
+zagor-discovery-server:
+    image: com.tasalparslan/zagor-discovery-server
+    hostname: "discoveryserver"
+    ports:
+     - "8761:8761"
+
+zagor-config-server:
+    image: com.tasalparslan/zagor-config-server
+    hostname: "configserver"
+    ports:
+     - "8888:8888"
+

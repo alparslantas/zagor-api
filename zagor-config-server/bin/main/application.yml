@@ -1,0 +1,18 @@
+server:
+  port: 8888
+  
+management:
+  security:
+    enabled: false
+    
+spring:
+  application:
+    name: zagor-config-server
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: classpath:configs/
+  
